@@ -1,0 +1,59 @@
+yaml
+name: Gerar APK
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      # Encontra a pasta do projeto (funciona na raiz ou dentro de Verde360-Android/)
+      - name: Localizar projeto
+        run: |
+          DIR=$(dirname "$(find . -maxdepth 3 -name settings.gradle.kts | head -1)")
+          echo "PROJ=$DIR" >> "$GITHUB_ENV"
+          echo "Projeto em: $DIR"
+
+      - name: APK de teste (debug)
+        working-directory: ${{ env.PROJ }}
+        run: |
+          chmod +x gradlew
+          ./gradlew --no-daemon assembleDebug
+
+      - name: Preparar chave de assinatura
+        if: env.KEYSTORE_BASE64 != ''
+        working-directory: ${{ env.PROJ }}
+        run: |
+          echo "$KEYSTORE_BASE64" | base64 -d > upload-keystore.jks
+          {
+            echo "storeFile=upload-keystore.jks"
+            echo "storePassword=${{ secrets.KEYSTORE_PASSWORD }}"
+            echo "keyAlias=${{ secrets.KEY_ALIAS }}"
+            echo "keyPassword=${{ secrets.KEY_PASSWORD }}"
+          } > keystore.properties
+
+      - name: APK e AAB de release (assinados)
+        if: env.KEYSTORE_BASE64 != ''
+        working-directory: ${{ env.PROJ }}
+        run: ./gradlew --no-daemon assembleRelease bundleRelease
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: verde360-android
+          path: |
+            **/app/build/outputs/apk/**/*.apk
+            **/app/build/outputs/bundle/release/*.aab
+          if-no-files-found: error
