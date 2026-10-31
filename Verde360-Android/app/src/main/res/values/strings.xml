@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VERDE360 Ambiental</string>
+    <string name="brand_primary">VERDE</string>
+    <string name="brand_accent">360</string>
+    <string name="brand_sub">Observatório ambiental · EmpreenderTHZ</string>
+
+    <string name="status_loading">Carregando</string>
+    <string name="status_online">Conectado</string>
+    <string name="status_offline">Sem conexão</string>
+    <string name="status_error">Indisponível</string>
+
+    <string name="nav_home">Início</string>
+    <string name="nav_back">Voltar</string>
+    <string name="nav_reload">Atualizar</string>
+    <string name="nav_share">Compartilhar</string>
+    <string name="nav_more">Mais</string>
+
+    <string name="error_offline_title">Sem conexão com a internet</string>
+    <string name="error_offline_msg">O VERDE360 precisa de internet para consultar as camadas e fontes oficiais. A página volta a carregar sozinha quando a conexão retornar.</string>
+    <string name="error_server_title">Plataforma indisponível no momento</string>
+    <string name="error_server_msg">Não foi possível acessar o VERDE360. Tente novamente em alguns instantes.</string>
+    <string name="retry">Tentar novamente</string>
+
+    <string name="menu_ibama">Denunciar ao Ibama</string>
+    <string name="menu_falabr">Plataforma Fala.BR</string>
+    <string name="menu_linha_verde">Ligar para a Linha Verde (0800 061 8080)</string>
+    <string name="menu_browser">Abrir no navegador</string>
+    <string name="menu_privacy">Política de privacidade</string>
+    <string name="menu_about">Sobre o aplicativo</string>
+
+    <string name="about_title">VERDE360 Ambiental</string>
+    <string name="about_body">Versão %1$s\n\nPlataforma de inteligência territorial e participação cidadã da EmpreenderTHZ. Reúne dados abertos do INPE, ICMBio, FUNAI, ANM, IBGE e outras fontes públicas.\n\nO VERDE360 não é afiliado nem representa órgãos públicos. Alertas de satélite e sobreposições de camadas não comprovam irregularidade. Relatos registrados no app não são denúncias oficiais: use os canais do Ibama ou da Fala.BR.</string>
+    <string name="close">Fechar</string>
+
+    <string name="share_subject">VERDE360 Ambiental</string>
+    <string name="share_chooser">Compartilhar página</string>
+    <string name="file_saved_title">Arquivo salvo</string>
+    <string name="file_saved_msg">“%1$s” foi salvo em Downloads.</string>
+    <string name="file_saved_msg_app">“%1$s” foi salvo na pasta do aplicativo. Toque em Compartilhar para enviá-lo ou guardá-lo em outro lugar.</string>
+    <string name="file_share">Compartilhar</string>
+    <string name="file_share_chooser">Compartilhar arquivo</string>
+    <string name="file_error">Não foi possível salvar o arquivo.</string>
+    <string name="file_too_large">O arquivo é grande demais para ser salvo pelo app.</string>
+    <string name="file_unsupported">Atualize o “Android System WebView” na Play Store para salvar arquivos pelo app.</string>
+    <string name="download_started">Download iniciado. Acompanhe na barra de notificações.</string>
+    <string name="link_error">Nenhum aplicativo disponível para abrir este link.</string>
+    <string name="chooser_error">Não foi possível abrir o seletor de arquivos.</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Marca VERDE360: folha dentro de um anel de 360°. Área segura do ícone adaptativo: raio 33 em 108. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <path android:pathData="M67,31.48A26,26 0,1 1,41,31.48" android:strokeColor="#FF78E2A0" android:strokeWidth="4.5" android:strokeLineCap="round" android:fillColor="#00000000" />
+    <path android:pathData="M47.6,27.7L43.5,35.8L38.5,27.1Z" android:fillColor="#FF78E2A0" />
+    <path android:pathData="M54,36C64.5,42 66.5,54.5 58.5,64C54.5,68.8 48.5,70 44,68C42,57.5 45.5,44 54,36Z" android:fillColor="#FF78E2A0" />
+    <path android:pathData="M46.5,65.5Q49.5,54 55,45" android:strokeColor="#FF0E2A1F" android:strokeWidth="2.2" android:strokeLineCap="round" android:fillColor="#00000000" />
+</vector>

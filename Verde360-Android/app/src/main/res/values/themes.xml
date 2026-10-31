@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Verde360" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/v360_bg</item>
+        <item name="android:colorBackground">@color/v360_bg</item>
+        <item name="android:colorPrimary">@color/v360_panel</item>
+        <item name="android:colorAccent">@color/v360_mint</item>
+        <item name="android:textColorPrimary">@color/v360_text</item>
+        <item name="android:textColorSecondary">@color/v360_muted</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- Tela de abertura (androidx.core:core-splashscreen) -->
+    <style name="Theme.Verde360.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/v360_bg</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.Verde360</item>
+    </style>
+
+    <style name="V360.NavItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/v360_muted</item>
+        <item name="android:drawableTint">@color/v360_mint</item>
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+</resources>

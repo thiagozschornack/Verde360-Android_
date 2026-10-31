@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_ibama" android:title="@string/menu_ibama" />
+    <item android:id="@+id/menu_falabr" android:title="@string/menu_falabr" />
+    <item android:id="@+id/menu_linha_verde" android:title="@string/menu_linha_verde" />
+    <item android:id="@+id/menu_browser" android:title="@string/menu_browser" />
+    <item android:id="@+id/menu_privacy" android:title="@string/menu_privacy" />
+    <item android:id="@+id/menu_about" android:title="@string/menu_about" />
+</menu>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Mesma paleta da plataforma web VERDE360 -->
+    <color name="v360_bg">#FF081611</color>
+    <color name="v360_panel">#FF11231C</color>
+    <color name="v360_panel2">#FF172E25</color>
+    <color name="v360_line">#FF294438</color>
+    <color name="v360_mint">#FF78E2A0</color>
+    <color name="v360_text">#FFEDF7F0</color>
+    <color name="v360_muted">#FF9BB7A7</color>
+    <color name="v360_amber">#FFFFCC75</color>
+    <color name="v360_red">#FFFF8A80</color>
+    <color name="ic_launcher_background">#FF0E2A1F</color>
+</resources>

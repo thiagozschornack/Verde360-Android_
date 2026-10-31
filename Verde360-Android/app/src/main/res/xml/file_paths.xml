@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Android 8 e 9: arquivos exportados ficam na pasta Download do próprio app. -->
+    <external-files-path name="downloads" path="Download/" />
+    <files-path name="downloads_internal" path="Download/" />
+</paths>
